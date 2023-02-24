@@ -1,0 +1,107 @@
+@font-face {
+  font-family: 'Plus Jakarta Sans'; 
+  src: url('assets/fonts/PlusJakartaSans-VariableFont_wght.ttf');
+}
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: hsl(210, 60%, 98%);
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  width: 100vw;
+  padding: 50px;
+}
+main {
+  background-color: hsl(0, 0%, 100%);
+  padding: 50px;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 20px;
+  width: 45%;
+  border-radius: 30px;
+  box-shadow: box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;;
+}
+.header {
+  display: flex;
+  flex-flow: row nowrap;
+  gap: 15px;
+  align-items: center;
+}
+.toggle-all {
+  margin-left: auto;
+  color: hsl(219, 12%, 42%);
+}
+.unread-count {
+  background-color: hsl(219, 85%, 26%);
+  padding: 5px 15px;
+  border-radius: 5px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 800;
+}
+.event {
+  font-size: 16px;
+  color: hsl(219, 12%, 42%);
+  font-weight: 500;
+  display: flex;
+  flex-flow: column nowrap;
+  gap: 5px;
+}
+.notification {
+  display: flex;
+  flex-flow: row nowrap;
+  padding: 20px;
+  gap: 20px;
+  border-radius: 20px;
+}
+.user, .group, .post {
+  font-weight: 800;
+}
+.user {
+  color: hsl(224, 21%, 14%);
+}
+.group, .post {
+  color: hsl(219, 12%, 42%);
+}
+.unread {
+  background-color: hsl(210, 60%, 98%);
+}
+.time {
+  color: hsl(219, 14%, 63%);
+}
+img {
+  height: 50px;
+}
+.message {
+  padding: 15px;
+  border: 1px solid hsl(211, 68%, 94%);
+  border-radius: 15px;
+}
+.message:hover {
+  background-color: hsl(211, 68%, 94%);
+  cursor: pointer;
+}
+.img-post {
+  margin-left: auto;
+}
+.img-post:hover {
+  outline: 2px solid hsl(219, 14%, 63%);
+  border-radius: 8px;;
+}
+.unread .summary::after {
+  background-color: hsl(1, 90%, 64%);
+  width: 10px;
+  height: 10px;
+  content: ' ';
+  border-radius: 50%;
+  display: inline-block;
+  margin-left: 5px;
+}
+.user:hover, .group:hover, .post:hover, .toggle-all:hover {
+  color: hsl(219, 85%, 26%);
+  cursor: pointer;
+}
